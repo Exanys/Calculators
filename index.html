@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Calculators</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <header class="jumbotron text-center bg-primary">
+          <h1 class="text-white display-1">Calculators</h1>
+      </header>
+      <main>
+        <div class="container">
+          <div class="row">
+            <form class="col-lg-6">
+              <h2 class="text-center">Výpočet tělesného tuku</h2>
+              <div class="form-group row">
+                <label for="name1" class="col-sm-3 col-form-label">Jméno:</label>
+                <input type="text" name="name1" id="name1" class="form-control col-sm-9" placeholder="Zadej své jméno">
+              </div>
+              <div class="form-group row">
+                <label for="sex" class="col-sm-3 col-form-label">Pohlaví: </label>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="sex" id="man" value="Muž"> Muž 
+                  </label>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="sex" id="woman" value="žena"> Žena 
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="age" class="col-sm-3 col-form-label">Věk: </label>
+                <input type="number" name="age" id="age" class="form-control col-sm-9" placeholder="Zadej věk" value="0">
+              </div>
+              <div class="form-group row">
+                <label for="height" class="col-sm-3 col-form-label">Výška: </label>
+                <input type="number" name="height" id="height" class="form-control col-sm-9" placeholder="Zadej výšku" value="150">
+              </div>
+              <div class="form-group row">
+                <label for="Weight" class="col-sm-3 col-form-label">Váha: </label>
+                <input type="number" name="weight" id="weight" class="form-control col-sm-9" placeholder="Zadej váhu" value="50">
+              </div>
+              <div class="form-group row">
+                <label for="goal" class="col-sm-3 col-form-label">Tvůj cíl:</label>
+                <select name="goal" id="goal" class="form-control col-sm-9" aria-describedby="helpId">
+                  <option>Přibrat</option>
+                  <option>Zachovat váhu</option>
+                  <option>Zhubnout</option>
+                </select>
+              </div>
+              <button id="btn1" type="button" class="btn btn-primary col-12">Výsledek</button>
+            </form>
+            <form class="col-lg-6">
+              <h2 class="text-center">Výpočet měsíční splátky hypotéky</h2>
+              <div class="form-group row">
+                <label for="principal" class="col-sm-3 col-form-label">Částka: </label>
+                <input type="number" name="principal" id="principal" class="form-control col-sm-9" placeholder="Zadej částku" min="50000">
+              </div>
+              <div class="form-group row">
+                <label for="years" class="col-sm-3 col-form-label">Počet let: </label>
+                <input type="number" name="years" id="years" class="form-control col-sm-9" placeholder="Počet let" min="1" max="100">
+              </div>
+              <div class="form-group row">
+                <label for="anualInterest" class="col-sm-3 col-form-label">Roční úrok: </label>
+                <input type="text" name="anualInterest" id="anualInterest" class="form-control col-sm-9" placeholder="Roční úrok">
+              </div>
+              <button id="btn2" type="button" class="btn btn-primary col-12">Výsledek</button>
+            </form>
+          </di>
+        </div>
+      </main>
+      <footer style="position: absolute; bottom: 0; width: 100%;"
+    class="page-footer font-small text-white text-center bg-primary mt-5 p-5">&copy; Vojtěch Binar, IT2</footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
