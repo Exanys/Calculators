@@ -64,7 +64,7 @@
               <p id="text1" class="col-12"></p>
             </form>
             <form class="col-lg-6">
-              <h2 class="text-center">Výpočet měsíční splátky hypotéky</h2>
+              <h2 class="text-center">Výpočet hypotéky</h2>
               <div class="form-group row">
                 <label for="name2" class="col-sm-3 col-form-label">Jméno:</label>
                 <input type="text" name="name2" id="name2" class="form-control col-sm-9" placeholder="Zadej své jméno">
@@ -79,7 +79,8 @@
               </div>
               <div class="form-group row">
                 <label for="anualInterest" class="col-sm-3 col-form-label">Roční úrok: </label>
-                <input type="text" name="anualInterest" id="anualInterest" class="form-control col-sm-9" placeholder="Roční úrok">
+                <input type="number" name="anualInterest" id="anualInterest" step="0.1" min="1"
+                  class="form-control col-sm-9" placeholder="Roční úrok">
               </div>
               <button id="btn2" type="button" class="btn btn-primary col-12">Výsledek</button>
               <p id="text2"></p>
@@ -87,7 +88,7 @@
           </di>
         </div>
       </main>
-      <footer style="position: absolute; bottom: 0; width: 100%;"
+      <footer style="position: fixed; bottom: 0; width: 100%;"
     class="page-footer font-small text-white text-center bg-primary mt-5 p-5">&copy; Vojtěch Binar, IT2</footer>
       
     <!-- Optional JavaScript -->
@@ -95,7 +96,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script scc='js/mortgage.js'></script>
+    <script src='js/mortgage.js'></script>
     <script src='js/bodyFat.js'></script>
   </body>
 </html>

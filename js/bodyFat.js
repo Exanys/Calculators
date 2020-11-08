@@ -1,4 +1,4 @@
-var person = {
+let person = {
     name: '',
     sex: '',
     age: 0,
@@ -38,6 +38,15 @@ var person = {
         else return energy;
     }
 }
+function clean() {
+    document.getElementById('name1').value = '';
+    document.getElementById('age').value = 1;
+    document.getElementById('height').value = 150;
+    document.getElementById('weight').value = 50;
+    document.getElementById('man').checked = false;
+    document.getElementById('woman').checked = false;
+    document.getElementById('active').value = 1;
+}
 
 document.getElementById('btn1').addEventListener('click', function () {
     person.name = document.getElementById('name1').value;
@@ -49,4 +58,5 @@ document.getElementById('btn1').addEventListener('click', function () {
     person.active = document.getElementById('active').value;
     document.getElementById('text1').innerHTML = `${person.name} máte BMI: ${person.bmi()}, tedy ${person.state()}, s ${person.fat()}% 
     tuků a a měl byste sníst ${person.reach().toFixed(2)}kcal.`;
+    clean();
 });
