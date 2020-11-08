@@ -56,7 +56,9 @@ document.getElementById('btn1').addEventListener('click', function () {
     person.sex = document.getElementById('man').checked ? 'muž' : 'žena';
     person.goal = document.getElementById('goal').value;
     person.active = document.getElementById('active').value;
-    document.getElementById('text1').innerHTML = `${person.name} máte BMI: ${person.bmi()}, tedy ${person.state()}, s ${person.fat()}% 
-    tuků a a měl byste sníst ${person.reach().toFixed(2)}kcal.`;
+    document.getElementById("text1").innerHTML = `${
+      person.name
+    } máte BMI: ${person.bmi()}, tedy ${person.state()}, s ${person.fat()}% 
+    tuků a měl byste sníst ${person.reach().toFixed(2)}kcal.`;
     clean();
 });
